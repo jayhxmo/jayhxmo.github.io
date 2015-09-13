@@ -7,7 +7,7 @@ $heading-font-family: $base-font-family;
 $base-font-size: 1.15em;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1;
 $heading-line-height: 1.2;
 
 // Other Sizes
@@ -43,9 +43,15 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 //Colors
-$color-white: #f7f7f7;
-$color-whiteA: #eee;
+$color-white: #fdfdfd;
+$color-whiteA: #f7f7f7;
+$color-whiteB: #eee;
 $color-blue: #66b2ff;
+
+$color-black: #1d1d1d;
+$color-blackA: #262626;
+$color-blackB: #555;
+$color-blackC: #777;
 
 $bp-sm: em(540);
 $bp-md: em(986);
