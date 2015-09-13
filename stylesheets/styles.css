@@ -360,13 +360,47 @@ td,
 th {
   padding: 0; }
 
+html {
+  font-size: 62.5%; }
+  @media screen and (min-width: 33.75em) {
+    html {
+      font-size: 65%; } }
+  @media screen and (min-width: 61.625em) {
+    html {
+      font-size: 70%; } }
+  @media screen and (min-width: 75em) {
+    html {
+      font-size: 80; } }
+  @media screen and (min-width: 90em) {
+    html {
+      font-size: 92.5%; } }
+
 body {
   color: #333;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: 1em;
+  font-size: 16px;
+  font-size: 1.15em;
   font-weight: 300;
   line-height: 1.5; }
+
+h1 {
+  font-size: 2.625em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.125em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.75em; }
+
+h6 {
+  font-size: 0.5em; }
 
 h1,
 h2,
@@ -375,7 +409,7 @@ h4,
 h5,
 h6 {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-size: 1em;
+  font-weight: 300;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
@@ -410,7 +444,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1.15em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
@@ -440,7 +474,7 @@ label,
 select {
   display: block;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-size: 1em; }
+  font-size: 1.15em; }
 
 label {
   font-weight: 600;
@@ -458,7 +492,7 @@ select[multiple=multiple] {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1.15em;
   margin-bottom: 0.75em;
   padding: 0.5em;
   transition: border-color 150ms ease;
@@ -2692,5 +2726,38 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: url(../images/background.jpg) no-repeat center center scroll;
+  background: url(../images/background.jpg) no-repeat center center scroll;
+  background-size: cover;
+  color: #f7f7f7; }
+  .intro .v-container {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 60%;
+    margin-left: 7.5%; }
+    .intro .v-container h1 {
+      font-size: 6.75em;
+      margin: 0;
+      padding: 0;
+      border: none;
+      line-height: 1;
+      text-transform: uppercase; }
+      .intro .v-container h1 span {
+        color: #66b2ff; }
+    .intro .v-container h2 {
+      margin: 0;
+      padding: 0;
+      border: none;
+      line-height: 1.33;
+      letter-spacing: 0.0625em;
+      opacity: 0.8; }
 
 /*# sourceMappingURL=styles.css.map */

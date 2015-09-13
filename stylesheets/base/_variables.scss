@@ -4,7 +4,7 @@ $base-font-family: "Proxima Nova", "Open Sans", $sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.15em;
 
 // Line height
 $base-line-height: 1.5;
@@ -45,3 +45,9 @@ $base-timing: ease;
 //Colors
 $color-white: #f7f7f7;
 $color-whiteA: #eee;
+$color-blue: #66b2ff;
+
+$bp-sm: em(540);
+$bp-md: em(986);
+$bp-lg: em(1200);
+$bp-xl: em(1440);
