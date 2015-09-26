@@ -14,8 +14,9 @@ $color-malibu: #66b2ff;
 // Typography
 $body-font: "Proxima Nova", "Open Sans", sans-serif;
 $title-font: $body-font;
+$font-sizes: 36 24 18 16 12 8;
 
-// Font Sizes
+// Line Height
 $body-lh: 1.25;
 $title-lh: 1.33;
 
@@ -29,7 +30,7 @@ $animation-duration: 175ms;
 $animation-timing: ease;
 
 // Breakpoints
-$bp-sm: 540px;
-$bp-md: 986px;
-$bp-lg: 1200px;
-$bp-xl: 1440px;
+$bp-sm: em(540);
+$bp-md: em(986);
+$bp-lg: em(1200);
+$bp-xl: em(1440);
