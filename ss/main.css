@@ -212,7 +212,7 @@ body {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 33.33%;
+    height: 15vw;
     background-color: #1d1d1d !important;
     background-size: cover !important; }
     .portfolio-show .show-panel:hover .text-box {
@@ -232,10 +232,6 @@ body {
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     transition: all 200ms ease; }
-  .portfolio-show .panel-huge {
-    width: 40%;
-    height: 66.66%;
-    float: left; }
   .portfolio-show .panel-normal {
     width: 20%;
     float: left; }
@@ -244,38 +240,32 @@ body {
     float: left; }
   .portfolio-show .panel-long {
     width: 20%;
-    height: 66.66%;
+    height: 30vw;
     float: right; }
 
 /* CUSTOM IMAGES */
-#p300in300 {
-  background: url(../images/projects/ghseoul.png) no-repeat center top scroll; }
+#project300ui {
+  background: url(../images/portfolio/300ui.jpg) no-repeat center top scroll; }
 
-#ghseoul {
-  background: url(../images/projects/ghseoul.png) no-repeat center top scroll; }
+#projectinfuture {
+  background: url(../images/portfolio/infuture.jpg) no-repeat center top scroll; }
 
-#ctctf {
-  background: url(../images/projects/ctctf.png) no-repeat center top scroll; }
+#project2014 {
+  background: url(../images/portfolio/2014.jpg) no-repeat center top scroll; }
 
-#infuture {
-  background: url(../images/projects/infuture.png) no-repeat center top scroll; }
+#project100i {
+  background: url(../images/portfolio/100i.jpg) no-repeat center top scroll; }
 
-#checkbyphoneonline {
-  background: url(../images/projects/checkbyphoneonline.png) no-repeat center top scroll; }
+#projectcbpo {
+  background: url(../images/portfolio/cbpo.jpg) no-repeat center top scroll; }
 
-#leangap {
-  background: url(../images/projects/leangap.png) no-repeat center top scroll; }
+#projectctctf {
+  background: url(../images/portfolio/ctctf.jpg) no-repeat center top scroll; }
 
-#jaymo2014 {
-  background: url(../images/projects/jaymo.png) no-repeat center top scroll; }
+#projectghseoul {
+  background: url(../images/portfolio/ghseoul.jpg) no-repeat center top scroll; }
 
-#p100in300 {
-  background: url(../images/projects/leangap.png) no-repeat center top scroll; }
-
-#hackbca {
-  background: url(../images/projects/hackbca.png) no-repeat center top scroll; }
-
-#hackbca-landing {
-  background: url(../images/projects/hackbca-landing.png) no-repeat center top scroll; }
+#projectleangap {
+  background: url(../images/portfolio/leangap.jpg) no-repeat center top scroll; }
 
 /*# sourceMappingURL=main.css.map */
