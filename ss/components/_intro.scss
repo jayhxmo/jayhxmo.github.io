@@ -1,0 +1,41 @@
+.intro {
+	height: 50%;
+	@include background(url(../images/background.jpg) no-repeat center center scroll);
+	background-size: cover;
+	color: $color-alabaster;
+	
+	.v-container {
+		@include size(auto auto);
+		@include position(relative, 50% null null null);
+		@include transform(translateY(-50%));
+		
+		margin-left: 7.5%;
+		
+		h1 {
+			font-size: em(108);
+			@include zero-box;
+			line-height: 1;
+			text-transform: uppercase;
+			
+			span {
+				color: $color-malibu;
+			}
+		}
+		
+		h2 { 
+			@include zero-box;
+			line-height: 1.33;
+			letter-spacing: em(1);
+			opacity: 0.8;
+		}
+	}
+	
+	@media (min-width: $bp-lg) {
+		height: 100%;
+		
+		.v-container {
+			@include position(relative, 60% null null null);
+			@include transform(translateY(0));
+		}
+	}
+}

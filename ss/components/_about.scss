@@ -1,0 +1,56 @@
+.about {
+	background-color: $color-white;
+	color: $color-mineshaft;
+	font-size: 1.25em;
+	@include outer-container(100%);
+	@include padding(2.86em 0);
+	
+	.row {
+		max-width: 90%;
+		width: em(680px);
+		@include margin(0 auto);
+		
+		.left { 
+			@include span-columns(12);
+			text-align: center; 
+			
+			@media (min-width: $bp-md) {
+				@include span-columns(5);
+				text-align: left;
+			}
+			
+			@media (min-width: $bp-lg) { @include span-columns(4); }
+			@media (min-width: $bp-xl) { @include span-columns(3); }
+		}
+		
+		.right { 
+			@include span-columns(12); 
+			
+			@media (min-width: $bp-md) { @include span-columns(7); }
+			@media (min-width: $bp-lg) { @include span-columns(8); }
+			@media (min-width: $bp-xl) { @include span-columns(9); }
+		}
+	}
+	
+	img {
+		width: 175px;
+		border-radius: 50%;
+		text-align: center;
+		@include margin(0 auto em(18) auto);
+		
+		@media (min-width: $bp-lg) {
+			@include size(180px 180px);
+		}
+	}
+	
+	h2 {
+		font-weight: 400;
+		line-height: 1;
+		@include margin(0 0 5px 0);
+	}
+	
+	p {
+		color: $color-boulder;
+		line-height: 1.8em;
+	}
+}
