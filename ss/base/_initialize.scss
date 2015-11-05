@@ -1,0 +1,36 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 540px;
+	max-width: 90%;
+	@include margin(0 auto 25px auto);
+	text-align: center;
+	
+	h2 {
+		font-weight: 400;
+		@include margin(0 auto 5px auto);
+	}
+	
+	h4 {
+		line-height: 1.6;
+		color: $color-boulder;
+		font-weight: 300;
+	}
+}
+
+section {
+	@include size(100% auto);
+	@include zero-box;
+}
