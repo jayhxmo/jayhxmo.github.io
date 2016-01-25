@@ -5,79 +5,12 @@ section {
 }
 
 img {
-	width: 175px;
-	border-radius: 50%;
-	text-align: center;
+	
 }
 
-header {
-	width: 540px;
-	max-width: 90%;
-	@include margin(0 auto 25px auto);
-	text-align: center;
-	
-	h2 {
-		font-weight: 400;
-		@include margin(0 auto 5px auto);
-	}
-	
-	h4 {
-		line-height: 1.6;
-		color: $color-blackC;
-		font-weight: 300;
-	}
-}
-.container {
-	width: 860px;	
-	@include outer-container(90%);
-	@include margin(0 auto);
-}
 
-.row {
-	@include row();
-}
 
-.intro {
-	height: 50%;
-	@include background(url(../images/background.jpg) no-repeat center center scroll);
-	background-size: cover;
-	color: $color-whiteA;
-	
-	.v-container {
-		@include size(auto auto);
-		@include position(relative, 50% null null null);
-		@include transform(translateY(-50%));
-		
-		margin-left: 7.5%;
-		
-		h1 {
-			font-size: em(108);
-			@include zero-box;
-			line-height: 1;
-			text-transform: uppercase;
-			
-			span {
-				color: $color-blue;
-			}
-		}
-		
-		h2 { 
-			@include zero-box;
-			line-height: 1.33;
-			letter-spacing: em(1);
-			opacity: 0.8;
-		}
-	}
-	
-	@media (min-width: $bp-lg) {
-		height: 100%;
-		
-		.v-container {
-			@include position(relative, 60% null null null);
-			@include transform(translateY(0));
-		}
-	}
-}
+
 
 .about {
 	background-color: $color-white;
@@ -114,6 +47,9 @@ header {
 	}
 	
 	img {
+		width: 175px;
+		border-radius: 50%;
+		text-align: center;
 		@include margin(0 auto em(18) auto);
 		
 		@media (min-width: $bp-lg) {
