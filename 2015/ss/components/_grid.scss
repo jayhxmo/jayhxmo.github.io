@@ -1,0 +1,107 @@
+body {
+	overflow: hidden;
+}
+
+.portfolio-show {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+	.show-panel {
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		height: 33.33%;
+		background-color: $color-black !important;
+		background-size: cover !important;
+		// @include transition(all $animation-duration $animation-timing);
+		// @include transition(all 200ms ease);
+		
+		&:hover {
+			.text-box {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&::after {
+		display: block;
+		height: 0;
+		content: "";
+		clear: both;
+		overflow: hidden;
+	}
+	
+	.text-box {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(19, 19, 19, 0.75);
+		color: $color-white;
+		opacity: 0;
+		@include transition(all 200ms ease);
+	}	
+	
+	.panel-huge {
+		width: 40%;
+		height: 66.66%;
+		float: left;
+	}
+	
+	.panel-normal {
+		width: 20%;
+		float: left;
+	}
+	
+	.panel-wide {
+		width: 40%;
+		float: left;
+	}
+	
+	.panel-long {
+		width: 20%;
+		height: 66.66%;
+		float: right;
+	}	
+}
+
+/* CUSTOM IMAGES */
+#p300in300 {
+	background: url(../images/projects/ghseoul.png) no-repeat center top scroll;
+}
+
+#ghseoul {
+	background: url(../images/projects/ghseoul.png) no-repeat center top scroll;
+}
+
+#ctctf {
+	background: url(../images/projects/ctctf.png) no-repeat center top scroll;
+}
+
+#infuture {
+	background: url(../images/projects/infuture.png) no-repeat center top scroll;
+}
+
+#checkbyphoneonline {
+	background: url(../images/projects/checkbyphoneonline.png) no-repeat center top scroll;
+}
+
+#leangap {
+	background: url(../images/projects/leangap.png) no-repeat center top scroll;
+}
+
+#jaymo2014 {
+	background: url(../images/projects/jaymo.png) no-repeat center top scroll;
+}
+
+#p100in300 {
+	background: url(../images/projects/leangap.png) no-repeat center top scroll;
+}
+
+#hackbca {
+	background: url(../images/projects/hackbca.png) no-repeat center top scroll;
+}
+
+#hackbca-landing {
+	background: url(../images/projects/hackbca-landing.png) no-repeat center top scroll;
+}
