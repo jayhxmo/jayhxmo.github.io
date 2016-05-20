@@ -1,19 +1,25 @@
 button {
+	display: inline-block;
 	@include size(em(200px) em(50px));
 	
+	@include margin(em(5px) auto em(5px) em(2px));
 	color: $color-white;
-	background-color: $color-dodgerblue;
+	background: url(../images/trees.jpeg) center 47% no-repeat;
 
-	font-family: $title-font;
+	font-family: $body-font;
 	@include font-sw(em(16px), $default-font-weight);
 
+	letter-spacing: 0.25em;
 	border: 0;
-	border-radius: $border-radius;
-
+	border-radius: 0;
+	vertical-align: middle;
 	outline: none;
 	text-transform: uppercase;
 
 	@extend %transition;
 
-	&:hover { background-color: shade($color-dodgerblue, 10%); }
+	&:hover {
+		@include margin(em(3px) auto em(7px) em(2px));
+		box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+	}
 }

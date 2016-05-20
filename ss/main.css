@@ -272,34 +272,50 @@ a {
     opacity: 0.8; }
 
 button {
+  display: inline-block;
   height: 3.125em;
   width: 12.5em;
+  margin: 0.3125em auto 0.3125em 0.125em;
   color: #fdfdfd;
-  background-color: #229aff;
+  background: url(../images/trees.jpeg) center 47% no-repeat;
   font-family: "brandon-grotesque", sans-serif;
   font-size: 1em;
   font-weight: 400;
+  letter-spacing: 0.25em;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0;
+  vertical-align: middle;
   outline: none;
   text-transform: uppercase; }
   button:hover {
-    background-color: #1f8be6; }
+    margin: 0.1875em auto 0.4375em 0.125em;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15); }
+
+form {
+  margin-top: 4%; }
+  form .mc-field-group {
+    display: inline-block; }
 
 input {
+  display: inline-block;
   height: 3.125em;
-  width: 30em;
-  margin: 0 auto;
+  width: 25em;
+  margin: 0.3125em auto;
   padding: 0 1.5em;
   color: #1d1d1d;
   background-color: #fdfdfd;
   border: 0;
-  border-radius: 1px;
+  border-radius: 0;
+  vertical-align: middle;
+  letter-spacing: 0.125em;
   font-family: "brandon-grotesque", sans-serif;
   font-size: 1em;
   font-weight: 400;
   text-align: left;
   outline: none; }
+  input:focus {
+    margin: 0.1875em auto 0.4375em;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15); }
 
 html {
   box-sizing: border-box; }
