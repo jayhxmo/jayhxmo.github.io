@@ -1,0 +1,21 @@
+// Form.scss
+
+input {
+	@include size(em(480px) em(50px));
+	@include margin(0 auto);
+	@include padding(0 em(24px));
+	
+	color: $color-black;
+	background-color: $color-white;
+	
+	border: 0;
+	border-radius: 1px;
+
+	font-family: $title-font;
+	@include font-sw(em(16px), $default-font-weight);
+	
+	text-align: left;
+	outline: none;
+
+	@extend %transition;
+}
