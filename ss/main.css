@@ -196,7 +196,8 @@ html, body {
   min-height: 100%;
   margin: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #c0c9c8; }
 
 .display-none {
   display: none;
@@ -226,17 +227,17 @@ html {
       font-size: 92.5%; } }
 
 body {
-  color: #1d1d1d;
-  font-family: sans-serif;
+  color: #fdfdfd;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.25; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: bold;
   line-height: 1.25;
-  margin: 0 0 0.625em;
+  margin: 0;
   padding: 0; }
 
 h1 {
@@ -258,7 +259,7 @@ h6 {
   font-size: 0.75em; }
 
 p {
-  font-family: sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.8; }
@@ -275,7 +276,7 @@ button {
   width: 12.5em;
   color: #fdfdfd;
   background-color: #229aff;
-  font-family: sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 1em;
   font-weight: 400;
   border: 0;
@@ -294,7 +295,7 @@ input {
   background-color: #fdfdfd;
   border: 0;
   border-radius: 1px;
-  font-family: sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 1em;
   font-weight: 400;
   text-align: left;
@@ -323,5 +324,48 @@ html {
     clear: both;
     content: "";
     display: table; }
+
+.content {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center; }
+  .content div#weeks, .content div#days, .content div#hours, .content div#minutes, .content div#seconds {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 20%; }
+    .content div#weeks:last-child, .content div#days:last-child, .content div#hours:last-child, .content div#minutes:last-child, .content div#seconds:last-child {
+      margin-right: 0; }
+  .content div.row {
+    width: 80%;
+    max-width: 62.5em;
+    margin: 0 auto; }
+  .content h1, .content h2, .content h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.5em; }
+  .content h2 {
+    margin-bottom: 1.5625em; }
+  .content h1 {
+    font-size: 8em;
+    letter-spacing: 0.025em;
+    background: url(../images/trees.jpeg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .content #weeks h1 {
+    background-position: 15% center; }
+  .content #days h1 {
+    background-position: 30% center; }
+  .content #hours h1 {
+    background-position: 45% center; }
+  .content #minutes h1 {
+    background-position: 60% center; }
+  .content #seconds h1 {
+    background-position: 75% center; }
 
 /*# sourceMappingURL=main.css.map */

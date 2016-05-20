@@ -10,19 +10,19 @@ html {
 }
 
 body {
-  color: $color-black;
+  color: $color-white;
   font-family: $body-font;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: bold;
   line-height: $body-lh;
   
 }
 
 %header {
 	font-family: $body-font;
-	font-weight: 300;
+	font-weight: bold;
 	line-height: $body-lh;
-	margin: 0 0 $sm-spacing;
+	margin: 0;
 	padding: 0;
 }
 

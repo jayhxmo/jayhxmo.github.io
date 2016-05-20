@@ -28,8 +28,8 @@ $color-black: #1d1d1d;
 
 // Main Colors
 $color-dodgerblue: #229aff;
-
-
+// $body-background: #b2ebf2;
+$body-background: #c0c9c8;
 
 
 /****************************************************************
@@ -47,8 +47,8 @@ $color-dodgerblue: #229aff;
 *****************************************************************
 ****************************************************************/
 // Typography
-$body-font: sans-serif;
-$title-font: sans-serif;;
+$body-font: 'brandon-grotesque', sans-serif;
+$title-font: 'brandon-grotesque', sans-serif;
 $font-sizes: 48px 36px 24px 18px 16px 12px;
 $em-base: 16px !default;
 $default-font-weight: 400;

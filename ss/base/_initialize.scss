@@ -1,6 +1,7 @@
 html, body {
 	@include full-screen;
 	@include zero-box;
+	background: $body-background;
 }
 
 .display-none {
