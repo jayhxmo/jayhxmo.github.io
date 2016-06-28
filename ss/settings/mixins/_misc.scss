@@ -1,3 +1,10 @@
 // start _misc.scss
 
+@mixin default3D {
+	box-shadow: 0 em(40px) em(70px) rgba(0, 0, 0, 0.33);
+}
+
+.hover {
+	@include default3D;
+}
 // end _misc.scss

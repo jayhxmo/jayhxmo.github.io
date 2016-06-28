@@ -15,11 +15,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: em(48px);
+	font-size: em(64px);
 }
 
 h2 {
-	font-size: em(36px);
+	font-size: em(48px);
 	letter-spacing: 0.125em;
 }
 
@@ -37,7 +37,7 @@ p {
 	padding: 0;
 
 	font-family: $font-family--primary;
-	font-size: em(18px);
+	font-size: em(20px);
 	font-weight: 600;
 	line-height: 1.8;
 }
