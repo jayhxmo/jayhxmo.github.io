@@ -1,3 +1,45 @@
 // start _typography.scss
 
+html {
+	font: $font-weight--primary normal 100% / 1.4 $font-family--primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+
+	font-family: $font-family--primary;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: em(48px);
+}
+
+h2 {
+	font-size: em(36px);
+	letter-spacing: 0.125em;
+}
+
+h3 {
+	font-size: em(24px);
+}
+
+h4 {
+	font-size: em(18px);
+}
+
+p {
+	max-width: em(600px);
+	margin: em(10px) 0;
+	padding: 0;
+
+	font-family: $font-family--primary;
+	font-size: em(18px);
+	font-weight: 600;
+	line-height: 1.8;
+}
+
 // end _typography.scss
