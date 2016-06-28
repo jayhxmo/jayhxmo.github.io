@@ -1,0 +1,21 @@
+{
+  "name": "jayhxmo.github.io",
+  "homepage": "https://github.com/jayhxmo/jayhxmo.github.io",
+  "authors": [
+    "Jay Mo <jayhxmo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0"
+  }
+}

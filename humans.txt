@@ -3,11 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Jay Mo -- @jayhxmo
 
 # TECHNOLOGY COLOPHON
 
