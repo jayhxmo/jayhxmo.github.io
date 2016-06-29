@@ -79,7 +79,7 @@ html, body {
 }
 
 .projects {
-	margin: em(320px) 0;
+	margin: em(320px) 0 em(80px) 0;
 }
 
 .load-more {
@@ -99,6 +99,32 @@ html, body {
 	@include transition(all, $animation-speed--default);
 	&:hover {
 		color: $color-black--2;
+	}
+}
+
+.subscribe {
+	margin: em(160px) 0;
+	padding: em(80px) 0;
+	
+	text-align: center;
+
+	background: $color-black--0;
+	color: $color-white--0;
+
+	@include low3D;
+
+	h2 {
+		font-size: em(36px);
+		line-height: 1.6;
+		letter-spacing: 0.25em;
+	}
+
+	h4,
+	h5 {
+		font-weight: 600;
+		letter-spacing: 0.05em;
+
+		opacity: 0.66;
 	}
 }
 

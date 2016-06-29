@@ -15,7 +15,6 @@ h6 {
 	font-family: $font-family--primary;
 	font-weight: 700;
 	line-height: 1;
-	text-transform: uppercase;
 }
 
 h1 {
@@ -32,10 +31,12 @@ h1 {
 h2 {
 	font-size: em(48px);
 	letter-spacing: 0.125em;
+	text-transform: uppercase;
 }
 
 h3 {
 	font-size: em(24px);
+	text-transform: uppercase;
 }
 
 h4 {

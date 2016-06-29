@@ -438,7 +438,7 @@ html, body {
     transform: translateY(-50%); }
 
 .projects {
-  margin: 20em 0; }
+  margin: 20em 0 5em 0; }
 
 .load-more {
   display: block;
@@ -456,6 +456,23 @@ html, body {
   transition: all, 175ms; }
   .load-more:hover {
     color: #777777; }
+
+.subscribe {
+  margin: 10em 0;
+  padding: 5em 0;
+  text-align: center;
+  background: #262626;
+  color: #FFFFFF;
+  box-shadow: 0 2.5em 4.375em rgba(0, 0, 0, 0.33); }
+  .subscribe h2 {
+    font-size: 2.25em;
+    line-height: 1.6;
+    letter-spacing: 0.25em; }
+  .subscribe h4,
+  .subscribe h5 {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    opacity: 0.66; }
 
 .more-work {
   color: #777777;
@@ -483,8 +500,7 @@ h6 {
   padding: 0;
   font-family: "proxima-nova", "brandon-grotesque", sans-serif;
   font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase; }
+  line-height: 1; }
 
 h1 {
   margin: 0;
@@ -497,10 +513,12 @@ h1 {
 
 h2 {
   font-size: 3em;
-  letter-spacing: 0.125em; }
+  letter-spacing: 0.125em;
+  text-transform: uppercase; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-transform: uppercase; }
 
 h4 {
   font-size: 1.125em; }
@@ -634,7 +652,37 @@ button {
   text-transform: uppercase;
   background-color: #FFFFFF;
   color: #262626;
-  border: 0; }
+  border: 0;
+  outline: none; }
+
+form {
+  margin: 2.25em auto 1em;
+  font-size: 1.25em; }
+  form button {
+    border: 0.1875em solid #FFFFFF; }
+  form button:hover {
+    background: #262626;
+    color: #FFFFFF;
+    -webkit-transition: all, 175ms;
+    -moz-transition: all, 175ms;
+    transition: all, 175ms; }
+
+input {
+  width: 26.25em;
+  height: 3em;
+  margin: 0;
+  padding: 0 1.5em;
+  font-family: "proxima-nova", "brandon-grotesque", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 3em;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #262626;
+  border: 0;
+  outline: none; }
 
 ul.filter {
   margin: 0;

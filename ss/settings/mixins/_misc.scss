@@ -1,5 +1,9 @@
 // start _misc.scss
 
+@mixin low3D {
+	box-shadow: 0 em(40px) em(70px) rgba(0, 0, 0, 0.33);
+}
+
 @mixin default3D {
 	box-shadow: 0 em(70px) em(120px) rgba(0, 0, 0, 0.33);
 }

@@ -1,0 +1,38 @@
+// start _form.scss
+form {
+	margin: em(36px) auto em(16px);
+	font-size: em(20px);
+
+	button {
+		border: em(3px) solid $color-white--0;
+	}
+	
+	button:hover {
+		background: $color-black--0;
+		color: $color-white--0;
+		@include transition(all, $animation-speed--default);
+	}
+}
+
+input {
+	width: em(420px);
+	height: em(48px);
+	margin: 0;
+	padding: 0 em(24px);
+
+	font-family: $font-family--primary;
+	font-size: em(12px);
+	font-weight: 700;
+	letter-spacing: 0.25em;
+	line-height: em(48px);
+	text-align: left;
+	text-transform: uppercase;
+
+	background-color: $color-white--0;
+	color: $color-black--0;
+
+	border: 0;
+	outline: none;
+}
+
+// end _form.scss
