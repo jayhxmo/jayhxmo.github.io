@@ -29,6 +29,10 @@ html, body {
 	h1 {
 		font-size: em(116px);
 		line-height: 1.33;
+
+		@media screen and (max-width: $bp-lg) {
+			font-size: em(96px);
+		}
 	}
 
 	h1:nth-child(2) {
@@ -151,7 +155,15 @@ html, body {
 .container {
 	width: 80%;
 	max-width: em(1200px);
-	margin: auto;
+	margin: 0 auto;
+
+	@media screen and (max-width: $bp-lg) {
+		width: 90%;
+	}
+
+	@media screen and (max-width: $bp-md) {
+		width: 100%;
+	}
 }
 
 // end _layout.scss

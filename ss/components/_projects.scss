@@ -22,6 +22,10 @@
 
 		@include linear-gradient(rgba(0, 0, 0, 0), transparent);
 		@include transition(all, $animation-speed--default);
+
+		@media screen and (max-width: $bp-md) {
+			padding: 0 em(56px);
+		}
 	}
 
 	h4 {
@@ -71,9 +75,24 @@
 		}
 
 		span.arrow {
-			margin-left: em(0px);
+			margin-left: 0;
 			background-position: right center;
 			opacity: 1;
+		}
+	}
+
+	@media screen and (max-width: $bp-md) {
+		height: em(600px);
+		margin: 0 auto;
+
+		p {
+			max-height: em(128px);
+		}
+
+		span.arrow {
+			margin-left: 0 !important;
+			background-position: right center !important;
+			opacity: 1 !important;
 		}
 	}
 }
@@ -99,6 +118,12 @@
 			@include linear-gradient(rgba(255, 255, 255, 0.50), transparent);
 		}
 	}
+
+	@media screen and (max-width: $bp-md) {
+		.overlay {
+			@include linear-gradient(rgba(255, 255, 255, 0.50), transparent);
+		}
+	}
 }
 
 .p-light {
@@ -113,6 +138,12 @@
 	}
 
 	&:hover {
+		.overlay {
+			@include linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+		}
+	}
+
+	@media screen and (max-width: $bp-md) {
 		.overlay {
 			@include linear-gradient(rgba(0, 0, 0, 0.25), transparent);
 		}

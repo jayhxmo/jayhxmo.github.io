@@ -404,6 +404,9 @@ html, body {
   .intro h1 {
     font-size: 7.25em;
     line-height: 1.33; }
+    @media screen and (max-width: 87.5em) {
+      .intro h1 {
+        font-size: 6em; } }
   .intro h1:nth-child(2) {
     color: #777777; }
     .intro h1:nth-child(2) span {
@@ -492,10 +495,28 @@ html, body {
 .container {
   width: 80%;
   max-width: 75em;
-  margin: auto; }
+  margin: 0 auto; }
+  @media screen and (max-width: 87.5em) {
+    .container {
+      width: 90%; } }
+  @media screen and (max-width: 61.625em) {
+    .container {
+      width: 100%; } }
 
 html {
   font: 800 normal 100%/1.4 "proxima-nova", "brandon-grotesque", sans-serif; }
+  @media screen and (max-width: 100em) {
+    html {
+      font-size: 90%; } }
+  @media screen and (max-width: 87.5em) {
+    html {
+      font-size: 80%; } }
+  @media screen and (max-width: 61.625em) {
+    html {
+      font-size: 70%; } }
+  @media screen and (max-width: 33.75em) {
+    html {
+      font-size: 60%; } }
 
 h2,
 h3,
@@ -563,6 +584,9 @@ a {
     -webkit-transition: all, 175ms;
     -moz-transition: all, 175ms;
     transition: all, 175ms; }
+    @media screen and (max-width: 61.625em) {
+      .project .overlay {
+        padding: 0 3.5em; } }
   .project h4 {
     margin: 0 0 0.625em 0;
     font-weight: 700;
@@ -596,9 +620,19 @@ a {
   .project:hover p {
     max-height: 4.5em; }
   .project:hover span.arrow {
-    margin-left: 0em;
+    margin-left: 0;
     background-position: right center;
     opacity: 1; }
+  @media screen and (max-width: 61.625em) {
+    .project {
+      height: 37.5em;
+      margin: 0 auto; }
+      .project p {
+        max-height: 8em; }
+      .project span.arrow {
+        margin-left: 0 !important;
+        background-position: right center !important;
+        opacity: 1 !important; } }
 
 .p-dark .overlay {
   color: #262626; }
@@ -613,6 +647,11 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), transparent);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), transparent); }
+@media screen and (max-width: 61.625em) {
+  .p-dark .overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), transparent);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), transparent); } }
 
 .p-light .overlay {
   color: #FFFFFF; }
@@ -624,6 +663,11 @@ a {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); }
+@media screen and (max-width: 61.625em) {
+  .p-light .overlay {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); } }
 
 #p-infuture {
   z-index: 10;
@@ -745,6 +789,7 @@ ul.filter {
 .social {
   list-style: none;
   margin: 0 auto;
+  padding: 0;
   text-align: center; }
   .social li {
     display: inline-block; }

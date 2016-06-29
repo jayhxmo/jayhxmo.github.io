@@ -2,6 +2,22 @@
 
 html {
 	font: $font-weight--primary normal 100% / 1.4 $font-family--primary;
+
+	@media screen and (max-width: $bp-xl) {
+		font-size: 90%;
+	}
+
+	@media screen and (max-width: $bp-lg) {
+		font-size: 80%;
+	}
+
+	@media screen and (max-width: $bp-md) {
+		font-size: 70%;
+	}
+
+	@media screen and (max-width: $bp-sm) {
+		font-size: 60%;
+	}
 }
 
 h2,

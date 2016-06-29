@@ -2,4 +2,10 @@
 
 $animation-speed--default: 175ms;
 
+// Breakpoints
+$bp-sm: em(540px);
+$bp-md: em(986px);
+$bp-lg: em(1400px);
+$bp-xl: em(1600px);
+
 // end _misc.scss
