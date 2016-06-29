@@ -1,0 +1,22 @@
+// start _buttons.scss
+
+button {
+	width: em(225px);
+	height: em(48px);
+	margin: 0;
+	padding: 0;
+
+	font-family: $font-family--primary;
+	font-size: em(12px);
+	font-weight: 700;
+	letter-spacing: 0.25em;
+	text-align: center;
+	text-transform: uppercase;
+
+	background-color: $color-white--0;
+	color: $color-black--0;
+
+	border: 0;
+}
+
+// end _buttons.scss

@@ -6,14 +6,15 @@ html, body {
 	margin: 0;
 	padding: 0;
 
+	// Fallback
+	background-color: #DCECFE;
+
 	$line: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.05)) repeat-y;
 	$line-size: 2px auto;
 
+	// Real deal
 	@include background($line, $line, $line, $line, $line, linear-gradient(120deg, #DCECFE 0%, #F5E1EE 100%) no-repeat);
-	// @include background($line, linear-gradient(120deg, #DCECFE 0%, #F5E1EE 100%) no-repeat);
-	// background-position: 83%, 0;
 	background-position: 10%, 30%, 50%, 70%, 90%, 0;
-	// background-size: $line-size, 100% auto;
 	background-size: $line-size, $line-size, $line-size, $line-size, $line-size, 100% auto;
 	background-attachment: fixed;
 }
@@ -44,6 +45,8 @@ html, body {
 
 		text-transform: uppercase;
 		text-align: center;
+
+		// border: 1px solid red;
 	}
 }
 

@@ -1,0 +1,26 @@
+ul.filter {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	li {
+		display: inline-block;
+		margin: 0 em(16px) 0 0;
+		
+		font-size: em(24px);
+		font-weight: 700;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+
+		color: $color-black--0;
+
+		opacity: 0.33;
+		cursor: pointer;
+
+		&:hover, &.active {
+			opacity: 1;
+			border-bottom: 2px solid $color-black--0;
+		}
+	}
+}

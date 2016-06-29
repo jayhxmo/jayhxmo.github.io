@@ -1,0 +1,76 @@
+// start _projects.scss
+
+.project {
+	width: 100%;
+	height: em(440px);
+	margin: em(16px) auto;
+	padding: 0;
+
+	@include default3D;
+
+	.overlay {
+		width: 100%;
+		height: 100%;
+		padding: 0 em(80px);
+
+		@include linear-gradient(rgba(0, 0, 0, 0), transparent);
+		@include transition(all, $animation-speed--default);
+	}
+
+	h4 {
+		margin: 0 0 em(10px) 0;
+
+		font-weight: 700;
+		letter-spacing: 0.125em;
+		opacity: 0.50;
+	}
+
+	h1 {
+		font-weight: 700;
+		letter-spacing: 0.025em;
+		margin: 0 0 em(2px) 0;
+	}
+
+	p {
+		max-height: em(0px);
+		margin: 0;
+		
+		overflow: hidden;
+		opacity: 0.50;
+
+		@include transition(max-height, $animation-speed--default);
+	}
+
+	button {
+		margin: em(36px) 0 0 0;
+	}
+
+	&:hover {
+		.overlay {
+			@include linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+		}
+
+		p {
+			max-height: em(72px);
+		}
+	}
+}
+
+.p-dark {
+	color: $color-black--0;
+
+	button {
+		background-color: $color-black--0;
+		color: $color-white--0;
+	}
+}
+
+.p-light {
+	color: $color-white--0;
+}
+
+#p-infuture {
+	background: url('../assets/projects/infuture.png') no-repeat center center;
+}
+
+// end _projects.scss
