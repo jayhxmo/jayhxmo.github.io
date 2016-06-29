@@ -97,13 +97,29 @@ html, body {
 	text-decoration: none;
 
 	@include transition(all, $animation-speed--default);
+
 	&:hover {
 		color: $color-black--2;
 	}
 }
 
+.more-work,
+.contact h3 {
+	margin: em(36px) auto 0 auto;
+	color: $color-black--2;
+
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: none;
+
+	a {
+		text-decoration: none;
+		border-bottom: 2px solid $color-black--1;
+	}
+}
+
 .subscribe {
-	margin: em(160px) 0;
+	margin: em(240px) 0 em(80px) 0;
 	padding: em(80px) 0;
 	
 	text-align: center;
@@ -128,17 +144,8 @@ html, body {
 	}
 }
 
-.more-work {
-	color: $color-black--2;
-
-	letter-spacing: 0.05em;
-	text-align: center;
-	text-transform: none;
-
-	a {
-		text-decoration: none;
-		border-bottom: 2px solid $color-black--1;
-	}
+.contact {
+	padding: em(20px) 0 em(180px);
 }
 
 .container {

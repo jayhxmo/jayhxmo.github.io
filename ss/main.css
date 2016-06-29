@@ -457,8 +457,20 @@ html, body {
   .load-more:hover {
     color: #777777; }
 
+.more-work,
+.contact h3 {
+  margin: 2.25em auto 0 auto;
+  color: #777777;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: none; }
+  .more-work a,
+  .contact h3 a {
+    text-decoration: none;
+    border-bottom: 2px solid #555555; }
+
 .subscribe {
-  margin: 10em 0;
+  margin: 15em 0 5em 0;
   padding: 5em 0;
   text-align: center;
   background: #262626;
@@ -474,14 +486,8 @@ html, body {
     letter-spacing: 0.05em;
     opacity: 0.66; }
 
-.more-work {
-  color: #777777;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-transform: none; }
-  .more-work a {
-    text-decoration: none;
-    border-bottom: 2px solid #555555; }
+.contact {
+  padding: 1.25em 0 11.25em; }
 
 .container {
   width: 80%;
@@ -701,5 +707,39 @@ ul.filter {
     ul.filter li:hover, ul.filter li.active {
       opacity: 1;
       border-bottom: 2px solid #262626; }
+
+.featured {
+  width: 100%;
+  max-width: 37.5em;
+  margin: 2.5em auto 15em auto;
+  padding: 0 1em;
+  font-size: 1.125em;
+  text-align: center;
+  color: #777777; }
+  .featured h4 {
+    font-weight: 600; }
+  .featured .column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .featured .column:last-child {
+      margin-right: 0; }
+  .featured ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .featured li {
+    margin: 1em 0; }
+  .featured li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #777777;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    -webkit-transition: all, 175ms;
+    -moz-transition: all, 175ms;
+    transition: all, 175ms; }
+    .featured li a:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.33); }
 
 /*# sourceMappingURL=main.css.map */
