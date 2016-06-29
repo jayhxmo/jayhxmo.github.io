@@ -23,4 +23,8 @@ ul.filter {
 			border-bottom: 2px solid $color-black--0;
 		}
 	}
+
+	@media screen and (max-width: $bp-md) {
+		text-align: center;
+	}
 }

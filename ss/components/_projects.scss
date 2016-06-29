@@ -94,6 +94,14 @@
 			background-position: right center !important;
 			opacity: 1 !important;
 		}
+
+		&:first-of-type {
+			margin-top: em(36px);
+		}
+
+		&:last-of-type {
+			margin-bottom: em(36px);
+		}
 	}
 }
 

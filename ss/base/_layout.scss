@@ -80,6 +80,35 @@ html, body {
 
 		@include vertical-center;
 	}
+
+	@media screen and (max-width: $bp-md) {
+		height: em(960px);
+		margin: 0 0 em(160px) 0;
+
+		.content {
+			float: none;
+			padding: 0 em(56px);
+
+			h2 {
+				font-size: em(36px);
+				text-align: center;
+			}
+
+			p {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		img {
+			float: none;
+
+			display: block;
+			margin: em(128px) auto 0 auto;
+
+			text-align: center;
+		}
+	}
 }
 
 .projects {
@@ -113,6 +142,7 @@ html, body {
 	color: $color-black--2;
 
 	letter-spacing: 0.05em;
+	line-height: 1.6;
 	text-align: center;
 	text-transform: none;
 
@@ -124,7 +154,7 @@ html, body {
 
 .subscribe {
 	margin: em(180px) 0 em(80px) 0;
-	padding: em(80px) 0;
+	padding: em(120px) 0;
 	
 	text-align: center;
 
@@ -146,10 +176,18 @@ html, body {
 
 		opacity: 0.66;
 	}
+
+	@media screen and (max-width: $bp-md) {
+		padding: em(120px) em(56px);
+	}
 }
 
 .contact {
-	padding: em(20px) 0 em(120px);
+	padding: em(20px) 0 em(120px) 0;
+
+	@media screen and (max-width: $bp-md) {
+		padding: em(20px) em(56px) em(120px) em(56px);
+	}
 }
 
 .container {

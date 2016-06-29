@@ -439,6 +439,24 @@ html, body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
+  @media screen and (max-width: 61.625em) {
+    .about {
+      height: 60em;
+      margin: 0 0 10em 0; }
+      .about .content {
+        float: none;
+        padding: 0 3.5em; }
+        .about .content h2 {
+          font-size: 2.25em;
+          text-align: center; }
+        .about .content p {
+          margin-left: auto;
+          margin-right: auto; }
+      .about img {
+        float: none;
+        display: block;
+        margin: 8em auto 0 auto;
+        text-align: center; } }
 
 .projects {
   margin: 20em 0 5em 0; }
@@ -465,6 +483,7 @@ html, body {
   margin: 2.25em auto 0 auto;
   color: #777777;
   letter-spacing: 0.05em;
+  line-height: 1.6;
   text-align: center;
   text-transform: none; }
   .more-work a,
@@ -474,7 +493,7 @@ html, body {
 
 .subscribe {
   margin: 11.25em 0 5em 0;
-  padding: 5em 0;
+  padding: 7.5em 0;
   text-align: center;
   background: #262626;
   color: #FFFFFF;
@@ -488,9 +507,15 @@ html, body {
     font-weight: 600;
     letter-spacing: 0.05em;
     opacity: 0.66; }
+  @media screen and (max-width: 61.625em) {
+    .subscribe {
+      padding: 7.5em 3.5em; } }
 
 .contact {
-  padding: 1.25em 0 7.5em; }
+  padding: 1.25em 0 7.5em 0; }
+  @media screen and (max-width: 61.625em) {
+    .contact {
+      padding: 1.25em 3.5em 7.5em 3.5em; } }
 
 .container {
   width: 80%;
@@ -632,7 +657,11 @@ a {
       .project span.arrow {
         margin-left: 0 !important;
         background-position: right center !important;
-        opacity: 1 !important; } }
+        opacity: 1 !important; }
+      .project:first-of-type {
+        margin-top: 2.25em; }
+      .project:last-of-type {
+        margin-bottom: 2.25em; } }
 
 .p-dark .overlay {
   color: #262626; }
@@ -751,6 +780,9 @@ ul.filter {
     ul.filter li:hover, ul.filter li.active {
       opacity: 1;
       border-bottom: 2px solid #262626; }
+  @media screen and (max-width: 61.625em) {
+    ul.filter {
+      text-align: center; } }
 
 .featured {
   width: 100%;
