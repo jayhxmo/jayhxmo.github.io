@@ -164,9 +164,15 @@ html, body {
 	@include low3D;
 
 	h2 {
+		margin-bottom: em(4px);
+
 		font-size: em(36px);
-		line-height: 1.6;
 		letter-spacing: 0.25em;
+		line-height: 1.33;
+
+		@media screen and (max-width: $bp-md) {
+			margin-bottom: em(12px);
+		}
 	}
 
 	h4,

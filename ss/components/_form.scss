@@ -12,6 +12,13 @@ form {
 		color: $color-white--0;
 		@include transition(all, $animation-speed--default);
 	}
+
+	@media screen and (max-width: $bp-sm) {
+		button {
+			width: em(420px);
+			margin: em(8px) auto 0 auto;
+		}
+	}
 }
 
 input {

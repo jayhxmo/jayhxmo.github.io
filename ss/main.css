@@ -499,9 +499,13 @@ html, body {
   color: #FFFFFF;
   box-shadow: 0 2.5em 4.375em rgba(0, 0, 0, 0.33); }
   .subscribe h2 {
+    margin-bottom: 0.25em;
     font-size: 2.25em;
-    line-height: 1.6;
-    letter-spacing: 0.25em; }
+    letter-spacing: 0.25em;
+    line-height: 1.33; }
+    @media screen and (max-width: 61.625em) {
+      .subscribe h2 {
+        margin-bottom: 0.75em; } }
   .subscribe h4,
   .subscribe h5 {
     font-weight: 600;
@@ -745,6 +749,10 @@ form {
     -webkit-transition: all, 175ms;
     -moz-transition: all, 175ms;
     transition: all, 175ms; }
+  @media screen and (max-width: 33.75em) {
+    form button {
+      width: 26.25em;
+      margin: 0.5em auto 0 auto; } }
 
 input {
   width: 26.25em;
