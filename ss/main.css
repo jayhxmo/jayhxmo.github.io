@@ -470,7 +470,7 @@ html, body {
     border-bottom: 2px solid #555555; }
 
 .subscribe {
-  margin: 15em 0 5em 0;
+  margin: 11.25em 0 5em 0;
   padding: 5em 0;
   text-align: center;
   background: #262626;
@@ -487,7 +487,7 @@ html, body {
     opacity: 0.66; }
 
 .contact {
-  padding: 1.25em 0 11.25em; }
+  padding: 1.25em 0 7.5em; }
 
 .container {
   width: 80%;
@@ -711,7 +711,7 @@ ul.filter {
 .featured {
   width: 100%;
   max-width: 37.5em;
-  margin: 2.5em auto 15em auto;
+  margin: 2.5em auto 17.5em auto;
   padding: 0 1em;
   font-size: 1.125em;
   text-align: center;
@@ -741,5 +741,43 @@ ul.filter {
     transition: all, 175ms; }
     .featured li a:hover {
       border-bottom: 2px solid rgba(0, 0, 0, 0.33); }
+
+.social {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center; }
+  .social li {
+    display: inline-block; }
+    .social li span {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0 1em;
+      opacity: 0.33;
+      -webkit-transition: all, 175ms;
+      -moz-transition: all, 175ms;
+      transition: all, 175ms; }
+      .social li span:hover {
+        opacity: 0.66; }
+
+span.i-facebook {
+  background: url("../assets/social/facebook.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-twitter {
+  background: url("../assets/social/twitter.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-instagram {
+  background: url("../assets/social/instagram.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-dribbble {
+  background: url("../assets/social/dribbble.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-linkedin {
+  background: url("../assets/social/linkedin.svg") no-repeat center center;
+  background-size: contain; }
 
 /*# sourceMappingURL=main.css.map */

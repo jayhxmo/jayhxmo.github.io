@@ -1,0 +1,52 @@
+// start _social.scss
+
+.social {
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+
+	li {
+		display: inline-block;
+
+		span {
+			display: inline-block;
+			width: em(24px);
+			height: em(24px);
+			margin: 0 em(16px);
+
+			opacity: 0.33;
+			@include transition(all, $animation-speed--default);
+
+			&:hover {
+				opacity: 0.66;
+			}
+		}
+	}
+}
+
+span.i-facebook {
+	background: url('../assets/social/facebook.svg') no-repeat center center;
+	background-size: contain;
+}
+
+span.i-twitter {
+	background: url('../assets/social/twitter.svg') no-repeat center center;
+	background-size: contain;
+}
+
+span.i-instagram {
+	background: url('../assets/social/instagram.svg') no-repeat center center;
+	background-size: contain;
+}
+
+span.i-dribbble {
+	background: url('../assets/social/dribbble.svg') no-repeat center center;
+	background-size: contain;
+}
+
+span.i-linkedin {
+	background: url('../assets/social/linkedin.svg') no-repeat center center;
+	background-size: contain;
+}
+
+// end _social.scss
