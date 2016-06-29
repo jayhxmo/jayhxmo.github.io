@@ -1,17 +1,24 @@
 // start _projects.scss
 
 .project {
+	position: relative;
+	top: em(0px);
 	width: 100%;
 	height: em(440px);
-	margin: em(16px) auto;
+	margin: em(36px) auto;
 	padding: 0;
 
 	@include default3D;
 
 	.overlay {
+		display: block;
 		width: 100%;
 		height: 100%;
 		padding: 0 em(80px);
+
+		text-decoration: none;
+
+		color: $color-white--0;
 
 		@include linear-gradient(rgba(0, 0, 0, 0), transparent);
 		@include transition(all, $animation-speed--default);
@@ -43,34 +50,96 @@
 
 	button {
 		margin: em(36px) 0 0 0;
+
+		span.arrow {
+			display: inline-block;
+			width: em(20px);
+			height: em(11px);
+			margin: 0 0 0 em(-20px);
+
+		    content: "";
+			opacity: 0;
+
+			@include transition(all, $animation-speed--default);
+			transition-delay: $animation-speed--default;
+		}
+	}
+
+	&:hover {
+		p {
+			max-height: em(72px);
+		}
+
+		span.arrow {
+			margin-left: em(0px);
+			background-position: right center;
+			opacity: 1;
+		}
+	}
+}
+
+.p-dark {
+	.overlay {
+		color: $color-black--0;
+	}
+
+	button {
+		background-color: $color-black--0;
+		color: $color-white--0;
+	}
+
+	span.arrow {
+		background: url('../assets/arrow-white.svg') no-repeat;
+		background-position: em(-20px) center;
+	    background-size: cover;
+	}
+
+	&:hover {
+		.overlay {
+			@include linear-gradient(rgba(255, 255, 255, 0.50), transparent);
+		}
+	}
+}
+
+.p-light {
+	.overlay {
+		color: $color-white--0;
+	}
+
+	span.arrow {
+		background: url('../assets/arrow.svg') no-repeat;
+		background-position: em(-20px) center;
+	    background-size: cover;
 	}
 
 	&:hover {
 		.overlay {
 			@include linear-gradient(rgba(0, 0, 0, 0.25), transparent);
 		}
-
-		p {
-			max-height: em(72px);
-		}
 	}
-}
-
-.p-dark {
-	color: $color-black--0;
-
-	button {
-		background-color: $color-black--0;
-		color: $color-white--0;
-	}
-}
-
-.p-light {
-	color: $color-white--0;
 }
 
 #p-infuture {
+	z-index: $z-project--1;
 	background: url('../assets/projects/infuture.png') no-repeat center center;
+	background-size: cover;
 }
 
+#p-onboardiq {
+	z-index: $z-project--2;
+	background: url('../assets/projects/onboardiq.png') no-repeat center center;
+	background-size: cover;
+}
+
+#p-300ui {
+	z-index: $z-project--3;
+	background: url('../assets/projects/300ui.png') no-repeat center center;
+	background-size: cover;
+}
+
+#p-6502 {
+	z-index: $z-project--3;
+	background: url('../assets/projects/6502.png') no-repeat center center;
+	background-size: cover;
+}
 // end _projects.scss

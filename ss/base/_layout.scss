@@ -51,7 +51,9 @@ html, body {
 }
 
 .about {
-	height: em(500px);
+	height: em(420px);
+	margin: em(160px) 0;
+
 	color: $color-black--2;
 
 	.container {
@@ -73,6 +75,43 @@ html, body {
 		float: right;
 
 		@include vertical-center;
+	}
+}
+
+.projects {
+	margin: em(320px) 0;
+}
+
+.load-more {
+	display: block;
+	width: 100%;
+	margin: 0 auto em(18px) auto;
+	
+	color: $color-black--3;
+
+	font-size: em(20px);
+	font-weight: 700;
+	letter-spacing: 0.125em;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	@include transition(all, $animation-speed--default);
+	&:hover {
+		color: $color-black--2;
+	}
+}
+
+.more-work {
+	color: $color-black--2;
+
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: none;
+
+	a {
+		text-decoration: none;
+		border-bottom: 2px solid $color-black--1;
 	}
 }
 

@@ -415,7 +415,8 @@ html, body {
     text-align: center; }
 
 .about {
-  height: 31.25em;
+  height: 26.25em;
+  margin: 10em 0;
   color: #777777; }
   .about .container {
     height: 100%; }
@@ -435,6 +436,35 @@ html, body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
+
+.projects {
+  margin: 20em 0; }
+
+.load-more {
+  display: block;
+  width: 100%;
+  margin: 0 auto 1.125em auto;
+  color: #999999;
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all, 175ms;
+  -moz-transition: all, 175ms;
+  transition: all, 175ms; }
+  .load-more:hover {
+    color: #777777; }
+
+.more-work {
+  color: #777777;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: none; }
+  .more-work a {
+    text-decoration: none;
+    border-bottom: 2px solid #555555; }
 
 .container {
   width: 80%;
@@ -484,16 +514,25 @@ p {
   font-weight: 600;
   line-height: 1.8; }
 
+a {
+  color: #262626;
+  text-decoration: underline; }
+
 .project {
+  position: relative;
+  top: 0em;
   width: 100%;
   height: 27.5em;
-  margin: 1em auto;
+  margin: 2.25em auto;
   padding: 0;
   box-shadow: 0 4.375em 7.5em rgba(0, 0, 0, 0.33); }
   .project .overlay {
+    display: block;
     width: 100%;
     height: 100%;
     padding: 0 5em;
+    text-decoration: none;
+    color: #FFFFFF;
     background-color: transparent;
     background-image: -webkit-linear-gradient(transparent, transparent);
     background-image: linear-gradient(transparent, transparent);
@@ -519,24 +558,68 @@ p {
     transition: max-height, 175ms; }
   .project button {
     margin: 2.25em 0 0 0; }
-  .project:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.25);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); }
+    .project button span.arrow {
+      display: inline-block;
+      width: 1.25em;
+      height: 0.6875em;
+      margin: 0 0 0 -1.25em;
+      content: "";
+      opacity: 0;
+      -webkit-transition: all, 175ms;
+      -moz-transition: all, 175ms;
+      transition: all, 175ms;
+      transition-delay: 175ms; }
   .project:hover p {
     max-height: 4.5em; }
+  .project:hover span.arrow {
+    margin-left: 0em;
+    background-position: right center;
+    opacity: 1; }
 
-.p-dark {
+.p-dark .overlay {
   color: #262626; }
-  .p-dark button {
-    background-color: #262626;
-    color: #FFFFFF; }
-
-.p-light {
+.p-dark button {
+  background-color: #262626;
   color: #FFFFFF; }
+.p-dark span.arrow {
+  background: url("../assets/arrow-white.svg") no-repeat;
+  background-position: -1.25em center;
+  background-size: cover; }
+.p-dark:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), transparent);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), transparent); }
+
+.p-light .overlay {
+  color: #FFFFFF; }
+.p-light span.arrow {
+  background: url("../assets/arrow.svg") no-repeat;
+  background-position: -1.25em center;
+  background-size: cover; }
+.p-light:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); }
 
 #p-infuture {
-  background: url("../assets/projects/infuture.png") no-repeat center center; }
+  z-index: 10;
+  background: url("../assets/projects/infuture.png") no-repeat center center;
+  background-size: cover; }
+
+#p-onboardiq {
+  z-index: 20;
+  background: url("../assets/projects/onboardiq.png") no-repeat center center;
+  background-size: cover; }
+
+#p-300ui {
+  z-index: 30;
+  background: url("../assets/projects/300ui.png") no-repeat center center;
+  background-size: cover; }
+
+#p-6502 {
+  z-index: 30;
+  background: url("../assets/projects/6502.png") no-repeat center center;
+  background-size: cover; }
 
 button {
   width: 14.0625em;
