@@ -21,7 +21,14 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <div class="navigation">
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <h2 id="header-about">About</h2>
+        </div>
         <section class="intro">
             <div class="container vertical-center">
                 <h1><span>I'</span><span>m</span></h1>
@@ -147,6 +154,21 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-67227442-3','auto');ga('send','pageview');
+        </script>
+        <script>
+            console.log('.hamburger');
+            $('.hamburger').click(function() {
+                $('.hamburger').toggleClass('is-active');
+                console.log('clicked');
+            });
+            // Look for .hamburger
+            // var hamburger = document.querySelector(".hamburger");
+            // On click
+            // hamburger.addEventListener("click", function() {
+                // Toggle class "is-active"
+                // hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+            // });
         </script>
     </body>
 </html>
