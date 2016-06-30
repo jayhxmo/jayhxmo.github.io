@@ -1,28 +1,43 @@
 // start _navigation.scss
 
-.navigation {
-	height: 100%;
-	float: left;
-	border: 1px solid red;
+.hamburger {
+	position: relative;
+	top: 10vh;
+	margin: 0;
+	padding: 0;
+}
 
-	.hamburger {
-		position: relative;
-		top: 20%;
+h2.header {
+	position: relative;
+	left: 5vw;
+
+	margin: 0;
+	padding: 0;
+
+	line-height: 1;
+
+	color: $color-black--2;
+	
+	opacity: 0.33;
+
+	@include transform(rotate(-90deg));
+	transform-origin: left top 0;
+
+	@media screen and (max-width: $bp-lg) {
+		display: none;
 	}
+}
 
-	h2 {
-		color: $color-black--2;
-		
-		opacity: 0.33;
+#header-about {
+	top: em(48px);
+}
 
-		@include transform(rotate(-90deg));
-		// transform-origin: left top 0;
-	}
+#header-projects {
+	top: em(72px);
+}
 
-	#header-about {
-		position: relative;
-		top: 100%;
-	}
+#header-contact {
+	top: em(96px);
 }
 
 // end _navigation.scss

@@ -21,14 +21,11 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="navigation">
-            <button class="hamburger hamburger--squeeze" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <h2 id="header-about">About</h2>
-        </div>
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <section class="intro">
             <div class="container vertical-center">
                 <h1><span>I'</span><span>m</span></h1>
@@ -38,6 +35,7 @@
             </div>
         </section>
         <section class="about">
+            <h2 class="header" id="header-about">About</h2>
             <div class="container">
                 <div class="content vertical-center">
                     <h2>Hacking Excites Me</h2>
@@ -47,6 +45,7 @@
             </div>
         </section>
         <section class="projects">
+            <h2 class="header" id="header-projects">Projects</h2>
             <div class="container">
                 <ul class="filter">
                     <li class="active">All</li>
@@ -110,6 +109,7 @@
             </div>
         </section>
         <section class="contact">
+            <h2 class="header" id="header-contact">Contact</h2>
             <h3>I'd love to hear from you! Feel free to <a href="">tweet</a> or <a href="">drop me a line</a>.</h3>
             <div class="featured">
                 <h4>Also feel free to check out these awesome creatives &amp; hackers</h4>
@@ -156,10 +156,8 @@
             ga('create','UA-67227442-3','auto');ga('send','pageview');
         </script>
         <script>
-            console.log('.hamburger');
             $('.hamburger').click(function() {
                 $('.hamburger').toggleClass('is-active');
-                console.log('clicked');
             });
             // Look for .hamburger
             // var hamburger = document.querySelector(".hamburger");

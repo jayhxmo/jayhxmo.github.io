@@ -959,23 +959,37 @@ span.i-linkedin {
   transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-.navigation {
-  height: 100%;
-  float: left;
-  border: 1px solid red; }
-  .navigation .hamburger {
-    position: relative;
-    top: 20%; }
-  .navigation h2 {
-    color: #777777;
-    opacity: 0.33;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
-  .navigation #header-about {
-    position: relative;
-    top: 100%; }
+.hamburger {
+  position: relative;
+  top: 10vh;
+  margin: 0;
+  padding: 0; }
+
+h2.header {
+  position: relative;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #777777;
+  opacity: 0.33;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: left top 0; }
+  @media screen and (max-width: 87.5em) {
+    h2.header {
+      display: none; } }
+
+#header-about {
+  top: 3em; }
+
+#header-projects {
+  top: 4.5em; }
+
+#header-contact {
+  top: 6em; }
 
 /*# sourceMappingURL=main.css.map */
