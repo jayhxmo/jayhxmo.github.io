@@ -412,6 +412,7 @@ html, body {
     .intro h1:nth-child(2) span {
       text-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.25); }
   .intro span {
+    position: relative;
     display: inline-block;
     width: 1.125em;
     text-transform: uppercase;
