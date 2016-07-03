@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
         <link rel="stylesheet" href="ss/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -21,11 +22,14 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <button class="hamburger hamburger--squeeze" type="button">
+        <nav class="navigation sidr left" id="js-nav">
+            
+        </nav>
+        <a class="hamburger hamburger--squeeze js-menu" href="js-nav">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
-        </button>
+        </a>
         <section class="intro">
             <div class="container vertical-center">
                 <h1><span data-stellar-ratio="1.05">I'</span><span data-stellar-ratio="1.2">m</span></h1>
@@ -43,7 +47,7 @@
                     <h2 data-stellar-ratio="1">Hacking Excites Me</h2>
                     <p>I'm a student currently attending Bergen County Academies studying Computer Science. I love to create awesome products and hack cool projects together. I also love the InFuture and OnboardIQ family. Check out my work somewhere on the internet. I'm a student currently attending Bergen County Academies studying Computer Science. I love to create awesome products and hack cool projects together.</p>
                 </div>
-                <img class="hover" src="assets/jmo.jpg" data-stellar-ratio="1.2">
+                <img class="hover" src="assets/jmo.jpg" data-stellar-ratio="1.175">
             </div>
         </section>
         <section class="projects">
@@ -153,6 +157,8 @@
         <script src="js/vendor/stellar.min.js"></script>
         <script src="js/parallax.js"></script>
         
+        <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -166,8 +172,10 @@
             ga('create','UA-67227442-3','auto');ga('send','pageview');
         </script>
         <script>
-            $('.hamburger').click(function() {
-                $('.hamburger').toggleClass('is-active');
+            $('.js-menu').sidr();
+
+            $('.js-menu').click(function() {
+                $('.js-menu').toggleClass('is-active');
             });
             // Look for .hamburger
             // var hamburger = document.querySelector(".hamburger");

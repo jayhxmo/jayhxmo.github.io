@@ -51,8 +51,10 @@ html, body {
 
 		text-transform: uppercase;
 		text-align: center;
+	}
 
-		// border: 1px solid red;
+	@media screen and (max-width: $bp-md) {
+		padding: 0 em(56px);
 	}
 }
 

@@ -3,6 +3,8 @@
 .hamburger {
 	position: relative;
 	top: 10vh;
+	left: 5vw;
+
 	margin: 0;
 	padding: 0;
 }
@@ -38,6 +40,12 @@ h2.header {
 
 #header-contact {
 	top: em(96px);
+}
+
+.navigation {
+	// display: inline-block;
+	// width: em(500px);
+	// height: 100%;
 }
 
 // end _navigation.scss
