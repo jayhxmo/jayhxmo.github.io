@@ -876,9 +876,6 @@ span.i-linkedin {
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-.menu {
-  border: 1px solid red; }
-
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -895,7 +892,7 @@ span.i-linkedin {
   border: 0;
   margin: 0;
   overflow: visible;
-  z-index: 10000; }
+  z-index: 11000; }
 
 .hamburger:hover {
   opacity: 0.7; }
@@ -911,10 +908,12 @@ span.i-linkedin {
   top: 50%;
   margin-top: -2px; }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: #262626;
   border-radius: 4px;
   position: absolute;
   transition-property: -webkit-transform;
@@ -923,7 +922,8 @@ span.i-linkedin {
   transition-duration: 0.15s;
   transition-timing-function: ease; }
 
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
   display: block; }
 
@@ -968,11 +968,17 @@ span.i-linkedin {
   transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .hamburger {
-  position: relative;
+  position: fixed;
   top: 10vh;
   left: 5vw;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #FFFFFF; }
+
+.hamburger-white span.hamburger-inner,
+.hamburger-white span.hamburger-inner::before,
+.hamburger-white span.hamburger-inner::after {
+  background-color: #FFFFFF; }
 
 h2.header {
   position: relative;
@@ -1003,15 +1009,20 @@ h2.header {
 
 .sidr {
   position: fixed;
-  top: -26.25em;
-  z-index: 999999;
+  top: -45em;
+  z-index: 10000;
   display: block;
   width: 100%;
-  height: 26.25em;
+  height: 40em;
   background: #262626;
   color: #FFFFFF;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
   box-shadow: 0 2.5em 4.375em rgba(0, 0, 0, 0.33); }
 
 .sidr.left {

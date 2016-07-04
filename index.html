@@ -25,7 +25,7 @@
         <nav class="navigation sidr top" id="js-nav">
             
         </nav>
-        <a class="hamburger hamburger--squeeze js-menu" href="js-nav">
+        <a class="hamburger hamburger--squeeze js-menu">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -153,6 +153,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/easing.js"></script>
         
         <script src="js/vendor/stellar.min.js"></script>
         <script src="js/parallax.js"></script>
@@ -176,6 +177,7 @@
 
             $('.js-menu').click(function() {
                 $('.js-menu').toggleClass('is-active');
+                $('.js-menu').toggleClass('hamburger-white');
             });
             // Look for .hamburger
             // var hamburger = document.querySelector(".hamburger");

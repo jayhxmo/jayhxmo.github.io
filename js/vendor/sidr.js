@@ -497,13 +497,13 @@
     var transitions = helper.transitions,
         settings = $$3.extend({
       name: 'sidr', // Name for the 'sidr'
-      speed: 200, // Accepts standard jQuery effects speeds (i.e. fast, normal or milliseconds)
+      speed: 500, // Accepts standard jQuery effects speeds (i.e. fast, normal or milliseconds)
       side: 'top', // Accepts 'left' or 'right'
       source: null, // Override the source of the content.
       renaming: true, // The ids and classes will be prepended with a prefix when loading existent content
       body: 'body', // Page container selector,
       displace: true, // Displace the body content or not
-      timing: 'ease', // Timing function for CSS transitions
+      timing: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)', // Timing function for CSS transitions
       method: 'toggle', // The method to call when element is clicked
       bind: 'touchstart click', // The event(s) to trigger the menu
       onOpen: function onOpen() {},

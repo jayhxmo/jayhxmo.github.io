@@ -1,11 +1,21 @@
 // start _navigation.scss
 .hamburger {
-    position: relative;
+    position: fixed;
     top: 10vh;
     left: 5vw;
     margin: 0;
     padding: 0;
+    color: $color-white--0;
 }
+
+.hamburger-white {
+	span.hamburger-inner,
+	span.hamburger-inner::before,
+	span.hamburger-inner::after {
+		background-color: $color-white--0;
+	}
+}
+
 
 h2.header {
     position: relative;
@@ -37,12 +47,12 @@ h2.header {
 
 .sidr {
     position: fixed;
-    top: em(-420px);
-    z-index: 999999;
+    top: em(-720px);
+    z-index: $z-index--menu;
     
     display: block;
     width: 100%;
-    height: em(420px);
+    height: em(640px);
     
     background: $color-black--0;
     color: $color-white--0;
@@ -50,6 +60,7 @@ h2.header {
     overflow-x: hidden;
     overflow-y: auto;
 
+    @include transform(translateZ(0));
     @include low3D;
 }
 
