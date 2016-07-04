@@ -1,51 +1,62 @@
 // start _navigation.scss
-
 .hamburger {
-	position: relative;
-	top: 10vh;
-	left: 5vw;
-
-	margin: 0;
-	padding: 0;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    margin: 0;
+    padding: 0;
 }
 
 h2.header {
-	position: relative;
-	left: 5vw;
+    position: relative;
+    left: 5vw;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: $color-black--2;
+    opacity: 0.33;
+    @include transform(rotate(-90deg));
+    transform-origin: left top 0;
 
-	margin: 0;
-	padding: 0;
-
-	line-height: 1;
-
-	color: $color-black--2;
-	
-	opacity: 0.33;
-
-	@include transform(rotate(-90deg));
-	transform-origin: left top 0;
-
-	@media screen and (max-width: $bp-lg) {
-		display: none;
-	}
+    @media screen and (max-width: $bp-lg) {
+        display: none;
+    }
 }
 
 #header-about {
-	top: em(48px);
+    top: em(48px);
 }
 
 #header-projects {
-	top: em(72px);
+    top: em(72px);
 }
 
 #header-contact {
-	top: em(96px);
+    top: em(96px);
 }
 
-.navigation {
-	// display: inline-block;
-	// width: em(500px);
-	// height: 100%;
+.sidr {
+    position: fixed;
+    top: em(-420px);
+    z-index: 999999;
+    
+    display: block;
+    width: 100%;
+    height: em(420px);
+    
+    background: $color-black--0;
+    color: $color-white--0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @include low3D;
+}
+
+
+.sidr.left {
+    left: em(-800px);
+    right: auto
 }
 
 // end _navigation.scss
