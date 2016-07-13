@@ -90,6 +90,10 @@ html, body {
 		margin: 0 0 em(160px) 0;
 
 		.content {
+			position: relative;
+			top: 0;
+			@include transform(translateY(0));
+
 			float: none;
 			padding: 0 em(56px);
 
@@ -122,7 +126,7 @@ html, body {
 .load-more {
 	display: block;
 	width: 100%;
-	margin: 0 auto em(18px) auto;
+	margin: em(48px) auto em(18px) auto;
 	
 	color: $color-black--3;
 

@@ -1,5 +1,14 @@
 // start _projects.scss
 
+.projects {
+	@media screen and (max-width: $bp-md) {
+		.container {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+		
 .project {
 	position: relative;
 	top: em(0px);
@@ -84,6 +93,10 @@
 	@media screen and (max-width: $bp-md) {
 		height: em(600px);
 		margin: 0 auto;
+
+		.container {
+			width: 100%;
+		}
 
 		p {
 			max-height: em(128px);

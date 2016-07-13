@@ -448,6 +448,13 @@ html, body {
       height: 60em;
       margin: 0 0 10em 0; }
       .about .content {
+        position: relative;
+        top: 0;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
         float: none;
         padding: 0 3.5em; }
         .about .content h2 {
@@ -468,7 +475,7 @@ html, body {
 .load-more {
   display: block;
   width: 100%;
-  margin: 0 auto 1.125em auto;
+  margin: 3em auto 1.125em auto;
   color: #999999;
   font-size: 1.25em;
   font-weight: 700;
@@ -596,6 +603,11 @@ a {
   color: #262626;
   text-decoration: underline; }
 
+@media screen and (max-width: 61.625em) {
+  .projects .container {
+    width: 100%;
+    max-width: 100%; } }
+
 .project {
   position: relative;
   top: 0em;
@@ -660,6 +672,8 @@ a {
     .project {
       height: 37.5em;
       margin: 0 auto; }
+      .project .container {
+        width: 100%; }
       .project p {
         max-height: 8em; }
       .project span.arrow {

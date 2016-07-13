@@ -50,7 +50,7 @@
                     <h2 data-stellar-ratio="1">Hacking Excites Me</h2>
                     <p>I'm a student currently attending Bergen County Academies studying Computer Science. I love to create awesome products and hack cool projects together. I also love the InFuture and OnboardIQ family. Check out my work somewhere on the internet. I'm a student currently attending Bergen County Academies studying Computer Science. I love to create awesome products and hack cool projects together.</p>
                 </div>
-                <img class="hover" src="assets/jmo.jpg" data-stellar-ratio="1.175">
+                <img class="hover" src="assets/jmo.jpg" data-stellar-ratio="1.25">
             </div>
         </section>
         <section class="projects">
@@ -178,21 +178,37 @@
         <script>
             $('.js-menu').sidr();
 
+            var initialHamburgerPosition = $('.js-menu').position().top;
+            var hamburgerPosition = $('.js-menu').position().top;
+
             $('.js-menu').click(function() {
                 if ($('.js-menu').hasClass('is-active')) {
                     $('.js-menu').removeClass('is-active');
                     $('.js-menu').removeClass('hamburger-white');
+
                     setTimeout(function() {
+                    $('.hamburger').css('top', '10vh');
                         $('.js-menu').removeClass('is-fixed');
                     }, 500);
                 }
 
                 else {
+                    $('.hamburger').css('top', hamburgerPosition);
+
                     $('.js-menu').addClass('is-active');
                     $('.js-menu').addClass('hamburger-white');
+
                     $('.js-menu').addClass('is-fixed');
                 }
                 
+            });
+
+            $(document).scroll(function() {
+                hamburgerPosition = $('.js-menu').position().top - $(window).scrollTop();
+
+                if ($('.js-menu').hasClass('is-active')) {
+                    $('.js-menu').click();
+                }
             });
             // Look for .hamburger
             // var hamburger = document.querySelector(".hamburger");
