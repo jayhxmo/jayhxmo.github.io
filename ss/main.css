@@ -626,9 +626,9 @@ a {
     background-color: transparent;
     background-image: -webkit-linear-gradient(transparent, transparent);
     background-image: linear-gradient(transparent, transparent);
-    -webkit-transition: all, 175ms;
-    -moz-transition: all, 175ms;
-    transition: all, 175ms; }
+    -webkit-transition: all 175ms ease;
+    -moz-transition: all 175ms ease;
+    transition: all 175ms ease; }
     @media screen and (max-width: 61.625em) {
       .project .overlay {
         padding: 0 3.5em; } }
@@ -993,6 +993,29 @@ span.i-linkedin {
 .hamburger-white span.hamburger-inner::before,
 .hamburger-white span.hamburger-inner::after {
   background-color: #FFFFFF; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  nav ul li {
+    display: inline-block;
+    margin: 0 2.25em;
+    font-size: 1.5em;
+    font-weight: 700; }
+  nav ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+    border-bottom: 0.125em solid #262626; }
+  nav ul a.active, nav ul a:hover {
+    opacity: 1;
+    border-bottom: 0.125em solid #FFFFFF;
+    -webkit-transition: all, 175ms;
+    -moz-transition: all, 175ms;
+    transition: all, 175ms; }
 
 h2.header {
   position: relative;

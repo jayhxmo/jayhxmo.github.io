@@ -19,6 +19,39 @@
 	}
 }
 
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 em(36px);
+
+            font-size: em(24px);
+            font-weight: 700;
+        }
+
+        a {
+            color: $color-white--0;
+            // text-transform: uppercase;
+            text-decoration: none;
+            opacity: 0.7;
+            letter-spacing: 0.05em;
+            border-bottom: em(2px) solid $color-black--0;
+        }
+
+        a.active, a:hover {
+            opacity: 1;
+            border-bottom: em(2px) solid $color-white--0;
+            @include transition(all, $animation-speed--default);
+        }
+    }
+}
+
 
 h2.header {
     position: relative;
@@ -70,7 +103,7 @@ h2.header {
 
 .sidr.left {
     left: em(-800px);
-    right: auto
+    right: auto;
 }
 
 // end _navigation.scss

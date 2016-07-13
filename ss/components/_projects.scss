@@ -30,7 +30,7 @@
 		color: $color-white--0;
 
 		@include linear-gradient(rgba(0, 0, 0, 0), transparent);
-		@include transition(all, $animation-speed--default);
+		@include transition(all $animation-speed--default ease);
 
 		@media screen and (max-width: $bp-md) {
 			padding: 0 em(56px);
