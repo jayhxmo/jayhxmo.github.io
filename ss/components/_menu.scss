@@ -23,11 +23,9 @@
     margin: 0;
     overflow: visible;
     z-index: $z-index--hamburger;
+    opacity: 1;
 }
 
-.hamburger:hover {
-    opacity: 0.7;
-}
 
 .hamburger-box {
     width: 40px;
@@ -47,7 +45,7 @@
 .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: $color-black--0;
+    background-color: $color-black--3;
     border-radius: 4px;
     position: absolute;
     transition-property: -webkit-transform;

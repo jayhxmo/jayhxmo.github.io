@@ -176,8 +176,20 @@
             $('.js-menu').sidr();
 
             $('.js-menu').click(function() {
-                $('.js-menu').toggleClass('is-active');
-                $('.js-menu').toggleClass('hamburger-white');
+                if ($('.js-menu').hasClass('is-active')) {
+                    $('.js-menu').removeClass('is-active');
+                    $('.js-menu').removeClass('hamburger-white');
+                    setTimeout(function() {
+                        $('.js-menu').removeClass('is-fixed');
+                    }, 500);
+                }
+
+                else {
+                    $('.js-menu').addClass('is-active');
+                    $('.js-menu').addClass('hamburger-white');
+                    $('.js-menu').addClass('is-fixed');
+                }
+                
             });
             // Look for .hamburger
             // var hamburger = document.querySelector(".hamburger");

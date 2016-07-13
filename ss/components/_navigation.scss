@@ -1,11 +1,14 @@
 // start _navigation.scss
 .hamburger {
-    position: fixed;
+    position: absolute;
     top: 10vh;
     left: 5vw;
     margin: 0;
     padding: 0;
-    color: $color-white--0;
+}
+
+.is-fixed {
+	position: fixed;
 }
 
 .hamburger-white {
