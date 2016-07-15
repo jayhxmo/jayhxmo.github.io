@@ -29,10 +29,16 @@ nav {
 
         li {
             display: inline-block;
-            margin: 0 em(36px);
+            margin: 0 em(32px);
 
-            font-size: em(24px);
+            font-size: em(28px);
             font-weight: 700;
+
+            @media screen and (max-width: $bp-md) {
+                display: block;
+                margin: em(48px) auto;
+                font-size: em(36px);
+            }
         }
 
         a {
@@ -98,6 +104,11 @@ h2.header {
 
     @include transform(translateZ(0));
     @include low3D;
+
+    @media screen and (max-width: $bp-md) {
+        top: -120%;
+        height: 100%;
+    }
 }
 
 

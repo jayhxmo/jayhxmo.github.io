@@ -1001,9 +1001,14 @@ nav ul {
   text-align: center; }
   nav ul li {
     display: inline-block;
-    margin: 0 2.25em;
-    font-size: 1.5em;
+    margin: 0 2em;
+    font-size: 1.75em;
     font-weight: 700; }
+    @media screen and (max-width: 61.625em) {
+      nav ul li {
+        display: block;
+        margin: 3em auto;
+        font-size: 2.25em; } }
   nav ul a {
     color: #FFFFFF;
     text-decoration: none;
@@ -1061,6 +1066,10 @@ h2.header {
   -o-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 2.5em 4.375em rgba(0, 0, 0, 0.33); }
+  @media screen and (max-width: 61.625em) {
+    .sidr {
+      top: -120%;
+      height: 100%; } }
 
 .sidr.left {
   left: -50em;
