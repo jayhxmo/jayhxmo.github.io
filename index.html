@@ -123,9 +123,13 @@
             <div class="container">
                 <h2>See more things like this from me</h2>
                 <h4>Be the first to see and test my newest projects</h4>
-                <form>
-                    <input type="" name="" placeholder="Your Name">
-                    <button>Subscribe</button>
+                <form action="//jaymo.us13.list-manage.com/subscribe/post?u=9753122d909e2fad4adf540ab&amp;id=cef185f340" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email">
+                    <button action="submit" id="mc-embedded-subscribe">Subscribe</button>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
                 </form>
                 <h5>Don't worry; I hate spam too</h5>
             </div>
@@ -177,61 +181,13 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/scroll.js"></script>
         <script src="js/projects.js"></script>
 
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-67227442-3','auto');ga('send','pageview');
-        </script>
-        <script>
-            $('.js-menu').sidr();
-
-            var initialHamburgerPosition = $('.js-menu').position().top;
-            var hamburgerPosition = $('.js-menu').position().top;
-
-            $('.js-menu').click(function() {
-                if ($('.js-menu').hasClass('is-active')) {
-                    $('.js-menu').removeClass('is-active');
-                    $('.js-menu').removeClass('hamburger-white');
-
-                    setTimeout(function() {
-                    $('.hamburger').css('top', '10vh');
-                        $('.js-menu').removeClass('is-fixed');
-                    }, 500);
-                }
-
-                else {
-                    $('.hamburger').css('top', hamburgerPosition);
-
-                    $('.js-menu').addClass('is-active');
-                    $('.js-menu').addClass('hamburger-white');
-
-                    $('.js-menu').addClass('is-fixed');
-                }
-                
-            });
-
-            $(document).scroll(function() {
-                hamburgerPosition = $('.js-menu').position().top - $(window).scrollTop();
-
-                if ($('.js-menu').hasClass('is-active')) {
-                    $('.js-menu').click();
-                }
-            });
-
-            $('body').plusAnchor({
-                easing: 'easeInOutExpo',
-                offsetTop: -$('#sidr').height(),
-                speed: 1000,
-                onInit: null,
-                onSlide: null,
-                performance: false
-            });
-        </script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
+        <script src="js/vendor/validate.js"></script>
+        
+        <script src="js/vendor/analytics.js"></script>
     </body>
 </html>

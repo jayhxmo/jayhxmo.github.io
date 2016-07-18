@@ -211,6 +211,27 @@ html, body {
 		opacity: 0.66;
 	}
 
+	#mce-responses {
+		margin: em(18px) auto;
+
+		font-size: em(16px);
+		font-weight: 600;
+		text-align: center;
+		letter-spacing: 0.05em;
+
+		#mce-error-response {
+			color: #e74c3c;
+		}
+
+		#mce-success-response {
+			color: #2ecc71;
+		}
+
+		a {
+			display: none;
+		}
+	}
+
 	@media screen and (max-width: $bp-md) {
 		padding: em(120px) em(56px);
 	}

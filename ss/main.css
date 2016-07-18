@@ -538,6 +538,18 @@ html, body {
     font-weight: 600;
     letter-spacing: 0.05em;
     opacity: 0.66; }
+  .subscribe #mce-responses {
+    margin: 1.125em auto;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05em; }
+    .subscribe #mce-responses #mce-error-response {
+      color: #e74c3c; }
+    .subscribe #mce-responses #mce-success-response {
+      color: #2ecc71; }
+    .subscribe #mce-responses a {
+      display: none; }
   @media screen and (max-width: 61.625em) {
     .subscribe {
       padding: 7.5em 3.5em; } }
