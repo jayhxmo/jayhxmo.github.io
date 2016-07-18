@@ -631,6 +631,9 @@ a {
   height: 27.5em;
   margin: 2.25em auto;
   padding: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
   box-shadow: 0 4.375em 7.5em rgba(0, 0, 0, 0.33); }
   .project .overlay {
     display: block;
@@ -737,34 +740,64 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); } }
 
 #p-onboardiq {
-  z-index: 10;
   background: url("../assets/projects/onboardiq.png") no-repeat center center;
   background-size: cover; }
 
 #p-infuture {
-  z-index: 20;
   background: url("../assets/projects/infuture.png") no-repeat center center;
   background-size: cover; }
 
 #p-flowww {
-  z-index: 30;
   background: url("../assets/projects/flowww.png") no-repeat center top;
   background-size: cover; }
 
 #p-300ui {
-  z-index: 40;
   background: url("../assets/projects/300ui.png") no-repeat center center;
   background-size: cover; }
 
 #p-6502 {
-  z-index: 50;
   background: url("../assets/projects/6502.png") no-repeat center center;
   background-size: cover; }
 
 #p-search {
-  z-index: 50;
   background: url("../assets/projects/search.png") no-repeat center center;
   background-size: cover; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.project:nth-child(1) {
+  z-index: 10;
+  animation-delay: 300ms; }
+
+.project:nth-child(2) {
+  z-index: 20;
+  animation-delay: 425ms; }
+
+.project:nth-child(3) {
+  z-index: 30;
+  animation-delay: 550ms; }
+
+.project:nth-child(4) {
+  z-index: 40;
+  animation-delay: 675ms; }
+
+.project:nth-child(5) {
+  z-index: 50;
+  animation-delay: 800ms; }
+
+.project:nth-child(6) {
+  z-index: 60;
+  animation-delay: 925ms; }
 
 button {
   width: 14.0625em;

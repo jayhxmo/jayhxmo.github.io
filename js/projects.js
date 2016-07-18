@@ -95,11 +95,11 @@ var all = [
 	projectSearch
 ];
 
-
 var design = [
 	projectOnboardIQ,
 	projectInFuture,
-	project300UI
+	project300UI,
+	projectFlowww
 ];
 
 var dev = [
