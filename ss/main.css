@@ -432,6 +432,14 @@ html, body {
   .about p {
     max-width: 27.5em;
     color: #999999; }
+  .about a {
+    display: block;
+    text-decoration: none; }
+    .about a p {
+      display: inline-block;
+      padding: 0;
+      line-height: 1.6;
+      border-bottom: 0.125em solid #CCCCCC; }
   .about img {
     width: 26.25em;
     height: 26.25em;
@@ -463,6 +471,8 @@ html, body {
         .about .content p {
           margin-left: auto;
           margin-right: auto; }
+        .about .content a {
+          text-align: center; }
       .about img {
         float: none;
         display: block;
@@ -720,14 +730,14 @@ a {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); } }
 
-#p-infuture {
+#p-onboardiq {
   z-index: 10;
-  background: url("../assets/projects/infuture.png") no-repeat center center;
+  background: url("../assets/projects/onboardiq.png") no-repeat center center;
   background-size: cover; }
 
-#p-onboardiq {
+#p-infuture {
   z-index: 20;
-  background: url("../assets/projects/onboardiq.png") no-repeat center center;
+  background: url("../assets/projects/infuture.png") no-repeat center center;
   background-size: cover; }
 
 #p-300ui {
@@ -736,7 +746,7 @@ a {
   background-size: cover; }
 
 #p-6502 {
-  z-index: 30;
+  z-index: 40;
   background: url("../assets/projects/6502.png") no-repeat center center;
   background-size: cover; }
 
@@ -1007,7 +1017,7 @@ nav ul {
     @media screen and (max-width: 61.625em) {
       nav ul li {
         display: block;
-        margin: 3em auto;
+        margin: 2.25em auto;
         font-size: 2.25em; } }
   nav ul a {
     color: #FFFFFF;

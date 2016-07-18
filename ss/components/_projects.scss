@@ -171,17 +171,18 @@
 	}
 }
 
-#p-infuture {
+#p-onboardiq {
 	z-index: $z-project--1;
+	background: url('../assets/projects/onboardiq.png') no-repeat center center;
+	background-size: cover;
+}
+
+#p-infuture {
+	z-index: $z-project--2;
 	background: url('../assets/projects/infuture.png') no-repeat center center;
 	background-size: cover;
 }
 
-#p-onboardiq {
-	z-index: $z-project--2;
-	background: url('../assets/projects/onboardiq.png') no-repeat center center;
-	background-size: cover;
-}
 
 #p-300ui {
 	z-index: $z-project--3;
@@ -190,7 +191,7 @@
 }
 
 #p-6502 {
-	z-index: $z-project--3;
+	z-index: $z-project--4;
 	background: url('../assets/projects/6502.png') no-repeat center center;
 	background-size: cover;
 }
