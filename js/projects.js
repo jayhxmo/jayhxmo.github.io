@@ -22,6 +22,18 @@ var projectOnboardIQ =
 	    '</a>' +
 	'</div>';
 
+var projectFlowww =
+	'<div class="project p-dark" id="p-flowww">' +
+	    '<a class="overlay" href="#">' +
+	        '<div class="content vertical-center">' +
+	            '<h4>Design &amp; Development</h4>' +
+	            '<h1>Flowww</h1>' +
+	            '<p>Frustrated with many productivity tools that don\'t work for me, my friend and I built a beautiful Kanban board for task management.</p>' +
+	            '<button>Explore <span class="arrow"></span></button>' +
+	        '</div>' +
+	    '</a>' +
+	'</div>';
+
 var project300UI =
 	'<div class="project p-light" id="p-300ui">' +
 	    '<a class="overlay" href="#">' +
@@ -34,6 +46,7 @@ var project300UI =
 	    '</a>' +
 	'</div>';
 
+
 var project6502 =
 	'<div class="project p-light" id="p-6502">' +
 	    '<a class="overlay" href="#">' +
@@ -41,18 +54,6 @@ var project6502 =
 	            '<h4>Hackathon: Design &amp; Frontend</h4>' +
 	            '<h1>6502 IDE</h1>' +
 	            '<p>At HackRPI, my friends and I built a solution to a problem we\'ve had while learning how to code in 6502 assembly language at school.</p>' +
-	            '<button>Explore <span class="arrow"></span></button>' +
-	        '</div>' +
-	    '</a>' +
-	'</div>';
-
-var projectFlowww =
-	'<div class="project p-light" id="p-flowww">' +
-	    '<a class="overlay" href="#">' +
-	        '<div class="content vertical-center">' +
-	            '<h4>Design &amp; Development</h4>' +
-	            '<h1>Flowww</h1>' +
-	            '<p>Frustrated with many productivity tools that don\'t work for me, my friend and I built a beautiful Kanban board for task management.</p>' +
 	            '<button>Explore <span class="arrow"></span></button>' +
 	        '</div>' +
 	    '</a>' +
@@ -85,21 +86,19 @@ var projectPotable =
 var featured = [
 	projectOnboardIQ,
 	projectInFuture,
-	project300UI,
-	project6502
+	projectFlowww,
+	project300UI
 ];
 
 var all = [
-	projectFlowww,
-	projectSearch,
-	projectPotable
+	project6502,
+	projectSearch
 ];
 
 
 var design = [
 	projectOnboardIQ,
 	projectInFuture,
-	projectFlowww,
 	project300UI
 ];
 
@@ -111,8 +110,7 @@ var dev = [
 
 var hackathon = [
 	project6502,
-	projectSearch,
-	projectPotable
+	projectSearch
 ];
 
 

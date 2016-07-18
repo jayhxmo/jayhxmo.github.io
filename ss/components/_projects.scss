@@ -184,15 +184,29 @@
 }
 
 
-#p-300ui {
+#p-flowww {
 	z-index: $z-project--3;
+	background: url('../assets/projects/flowww.png') no-repeat center top;
+	background-size: cover;
+}
+
+#p-300ui {
+	z-index: $z-project--4;
 	background: url('../assets/projects/300ui.png') no-repeat center center;
 	background-size: cover;
 }
 
+
 #p-6502 {
-	z-index: $z-project--4;
+	z-index: $z-project--5;
 	background: url('../assets/projects/6502.png') no-repeat center center;
 	background-size: cover;
 }
+
+#p-search {
+	z-index: $z-project--6;
+	background: url('../assets/projects/search.png') no-repeat center center;
+	background-size: cover;
+}
+
 // end _projects.scss

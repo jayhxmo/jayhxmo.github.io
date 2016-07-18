@@ -15,4 +15,9 @@
 .hover {
 	@include default3D;
 }
+
+.display-none {
+	display: none !important;
+}
+
 // end _misc.scss
