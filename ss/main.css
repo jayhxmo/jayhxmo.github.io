@@ -410,6 +410,12 @@ html, body {
     @media screen and (max-width: 87.5em) {
       .intro h1 {
         font-size: 6em; } }
+    @media screen and (max-width: 61.625em) {
+      .intro h1 {
+        font-size: 5em; } }
+    @media screen and (max-width: 33.75em) {
+      .intro h1 {
+        font-size: 4.5em; } }
   .intro h1:nth-child(2) {
     color: #777777; }
     .intro h1:nth-child(2) span {

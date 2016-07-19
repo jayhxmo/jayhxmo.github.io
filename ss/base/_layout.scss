@@ -33,6 +33,14 @@ html, body {
 		@media screen and (max-width: $bp-lg) {
 			font-size: em(96px);
 		}
+
+		@media screen and (max-width: $bp-md) {
+			font-size: em(80px);
+		}
+
+		@media screen and (max-width: $bp-sm) {
+			font-size: em(72px);
+		}
 	}
 
 	h1:nth-child(2) {
