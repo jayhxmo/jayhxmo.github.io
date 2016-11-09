@@ -161,6 +161,8 @@ html, body {
 	text-transform: uppercase;
 	text-decoration: none;
 
+	cursor: pointer;
+	
 	@include transition(all, $animation-speed--default);
 
 	&:hover {

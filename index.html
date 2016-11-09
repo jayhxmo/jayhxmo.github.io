@@ -25,6 +25,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="load"></div>
         <nav class="navigation sidr top" id="sidr">
             <div class="container vertical-center">
                 <ul>
@@ -56,7 +57,7 @@
             <div class="container">
                 <div class="content vertical-center">
                     <h2 data-stellar-ratio="1">Hacking Excites Me</h2>
-                    <p>I'm an interface and product designer based in the Greater New York City area. I spent my summer in San Francisco, as a design intern at OnboardIQ. I love designing and developing exciting projects. I spend most of my time with people I love, learning, or hustling to launch my next project.</p>
+                    <p>I'm a designer based in the Greater New York City area. I spent my summer in San Francisco, as a design intern at OnboardIQ. I love designing and developing exciting projects. I spend most of my time with people I love, learning, or hustling to launch my next project.</p>
                     <a href="mailto:jay@jaymo.io?subject=Freelance%20Inquiry"><p>Looking for a freelance designer?</p></a>
                 </div>
                 <img class="hover" src="assets/jmo.jpg" data-stellar-ratio="1.25">
@@ -79,7 +80,7 @@
                             <div class="content vertical-center">
                                 <h4>Design Intern</h4>
                                 <h1>OnboardIQ</h1>
-                                <p>I joined OnboardIQ as a design intern, and I'm currently working on various types of designs based on priority and need.</p>
+                                <p>I joined OnboardIQ as a design intern, and I worked on various types of design projects based on priority and need.</p>
                                 <button>Explore <span class="arrow"></span></button>
                             </div>
                         </a>
@@ -89,17 +90,7 @@
                             <div class="content vertical-center">
                                 <h4>Director</h4>
                                 <h1>InFuture</h1>
-                                <p>I'm currently organizing a high school hackathon to take place this fall in New York City with the mission to inspire the high school hacking community.</p>
-                                <button>Explore <span class="arrow"></span></button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project p-dark" id="p-flowww">
-                        <a class="overlay" href="http://flowww.xyz/" target="_blank">
-                            <div class="content vertical-center">
-                                <h4>Design &amp; Development</h4>
-                                <h1>Flowww</h1>
-                                <p>Frustrated with many productivity tools that don\'t work for me, my friend and I built a beautiful Kanban board for task management.</p>
+                                <p>I'm currently organizing a high school hackathon to take place in New York City with the mission to inspire the high school hacking community.</p>
                                 <button>Explore <span class="arrow"></span></button>
                             </div>
                         </a>
@@ -189,5 +180,10 @@
         <script src="js/vendor/validate.js"></script>
         
         <script src="js/vendor/analytics.js"></script>
+        <script>
+            setTimeout(function() {
+                $('.load').css('display', 'none');
+            }, 2500);
+        </script>
     </body>
 </html>

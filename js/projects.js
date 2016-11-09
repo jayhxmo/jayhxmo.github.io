@@ -4,7 +4,7 @@ var projectOnboardIQ =
 	        '<div class="content vertical-center">' +
 	            '<h4>Design Intern</h4>' +
 	            '<h1>OnboardIQ</h1>' +
-	            '<p>I joined OnboardIQ as a design intern, and I\'m currently working on various types of designs based on priority and need.</p>' +
+	            '<p>I joined OnboardIQ as a design intern, and I worked on various types of design projects based on priority and need.</p>' +
 	            '<button>Explore <span class="arrow"></span></button>' +
 	        '</div>' +
 	    '</a>' +
@@ -16,23 +16,23 @@ var projectInFuture =
 	        '<div class="content vertical-center">' +
 	            '<h4>Director</h4>' +
 	            '<h1>InFuture</h1>' +
-	            '<p>I\'m currently organizing a high school hackathon to take place this fall in New York City with the mission to inspire the high school hacking community.</p>' +
+	            '<p>I\'m currently organizing a high school hackathon to take place in New York City with the mission to inspire the high school hacking community.</p>' +
 	            '<button>Explore <span class="arrow"></span></button>' +
 	        '</div>' +
 	    '</a>' +
 	'</div>';
 
-var projectFlowww =
-	'<div class="project p-dark" id="p-flowww">' +
-	    '<a class="overlay" href="http://flowww.xyz/" target="_blank">' +
-	        '<div class="content vertical-center">' +
-	            '<h4>Design &amp; Development</h4>' +
-	            '<h1>Flowww</h1>' +
-	            '<p>Frustrated with many productivity tools that don\'t work for me, my friend and I built a beautiful Kanban board for task management.</p>' +
-	            '<button>Explore <span class="arrow"></span></button>' +
-	        '</div>' +
-	    '</a>' +
-	'</div>';
+// var projectFlowww =
+	// '<div class="project p-dark" id="p-flowww">' +
+	//     '<a class="overlay" href="http://flowww.xyz/" target="_blank">' +
+	//         '<div class="content vertical-center">' +
+	//             '<h4>Design &amp; Development</h4>' +
+	//             '<h1>Flowww</h1>' +
+	//             '<p>Frustrated with many productivity tools that don\'t work for me, my friend and I built a beautiful Kanban board for task management.</p>' +
+	//             '<button>Explore <span class="arrow"></span></button>' +
+	//         '</div>' +
+	//     '</a>' +
+	// '</div>';
 
 var project300UI =
 	'<div class="project p-light" id="p-300ui">' +
@@ -74,7 +74,6 @@ var projectSearch =
 var featured = [
 	projectOnboardIQ,
 	projectInFuture,
-	projectFlowww,
 	project300UI
 ];
 
@@ -87,11 +86,9 @@ var design = [
 	projectOnboardIQ,
 	projectInFuture,
 	project300UI,
-	projectFlowww
 ];
 
 var dev = [
-	projectFlowww,
 	project300UI,
 	project6502
 ];
@@ -100,7 +97,3 @@ var hackathon = [
 	project6502,
 	projectSearch
 ];
-
-
-
-

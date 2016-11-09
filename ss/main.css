@@ -502,6 +502,7 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
   -webkit-transition: all, 175ms;
   -moz-transition: all, 175ms;
   transition: all, 175ms; }
@@ -637,6 +638,27 @@ a {
   color: #262626;
   text-decoration: underline; }
 
+.load {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000000;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  animation-name: fadeOut;
+  animation-delay: 1s;
+  animation-duration: 1500ms;
+  animation-fill-mode: both; }
+
+@keyframes fadeOut {
+  from {
+    display: none;
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 @media screen and (max-width: 61.625em) {
   .projects .container {
     width: 100%;
@@ -837,7 +859,8 @@ form {
   margin: 2.25em auto 1em;
   font-size: 1.25em; }
   form button {
-    border: 0.1875em solid #FFFFFF; }
+    border: 0.1875em solid #FFFFFF;
+    cursor: pointer; }
   form button:hover {
     background: #262626;
     color: #FFFFFF;
